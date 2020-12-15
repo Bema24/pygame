@@ -71,11 +71,11 @@ def down_move():
 def ateset():
     global ateskontrol
     winsound.PlaySound('lazer.wav', winsound.SND_ASYNC)
-    x = oyuncu.xcor()
-    y = oyuncu.ycor() + 20
-    ates.goto(x, y)
-    ates.showturtle()
-    ateskontrol = True
+    x = player.xcor()
+    y = player.ycor() + 20
+    fire.goto(x, y)
+    fire.showturtle()
+    firekontrol = True
 
 hedefler = []
 for i in range(7):
